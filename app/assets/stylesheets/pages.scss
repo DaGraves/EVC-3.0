@@ -1,0 +1,48 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#profheader {
+	text-align: right;
+	color: Grey;
+
+}
+
+#profcontent {
+	float:right;
+	border-radius: 20px;
+	margin-top:50px;
+	width: 800px;
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10px;
+}
+
+#proflinks {
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: white;
+	margin-top: 50px;
+	float:left;
+}
+
+#profinfo {
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+#profuploads{
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid grey;
+	border-radius: 5px
+}
+
+ul#prolinks li{
+	
+	display:inline;
+}
+
