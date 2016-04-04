@@ -5,8 +5,8 @@
     <div class="box panel panel-default">
       <%= link_to image_tag(post.image.url(:medium)), post %>
       <div class="panel-body">
-        <%= post.description %><br/>
-        <strong><%= post.user.email if post.user %></strong>
+        <strong><%= post.user.username if post.user %></strong><br/>
+        <%= post.description %>
         <% if post.user == current_user %>
           <div class="actions">
             <%= link_to 'Edit', edit_post_path(post) %>
