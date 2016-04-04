@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'profiles/show'
+
   resources :posts
   devise_for :users
   root "posts#index"
