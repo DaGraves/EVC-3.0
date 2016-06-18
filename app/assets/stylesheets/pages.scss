@@ -3,46 +3,29 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #profheader {
+	padding: 10px;
+	background-color: white;
 	text-align: right;
 	color: Grey;
+	
 
 }
 
-#profcontent {
-	float:right;
-	border-radius: 20px;
-	margin-top:50px;
-	width: 800px;
-	background-color: white;
-	margin-left:auto;
-	margin-right:auto;
-	padding: 10px;
-}
-
-#proflinks {
-	padding: 10px;
-	text-align: center;
-	border-radius: 20px;
-	background-color: white;
-	margin-top: 50px;
-	float:left;
-}
 
 #profinfo {
-	padding: 10px;
-	border: 1px solid grey;
-	border-radius: 5px;
+	background-color: white;
+	padding: 5px;
+	border-bottom: 1px solid grey;
 }
 
 #profuploads{
+background-color: white;
 	padding: 10px;
 	margin-top: 5px;
-	border: 1px solid grey;
 	border-radius: 5px
 }
 
 ul#prolinks li{
-	
 	display:inline;
 }
 

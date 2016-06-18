@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400);
 
-$body-bg:                          #ecf0f1;
-$font-family-sans-serif:           'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-height:                    45px;
-$navbar-default-bg:                white;
-$navbar-default-brand-color:       #c0392b;
+$body-bg:                          #e3e3e3;
+$font-family-sans-serif:           'Quicksand', sans-serif;
+$navbar-height:                    70px;
+$navbar-default-bg:                black;      
+$navbar-default-brand-color:       white;
 $brand-primary:                    #c0392b;
 $jumbotron-bg:                     white;
 
@@ -16,11 +17,28 @@ $jumbotron-bg:                     white;
      text-align: center;
 }
 
+.navbar-default .navbar-nav > li > a{
+	color: white;
+	
+}
+
+.nav-bottom{
+	text-align: center;
+	margin-bottom: 0px;
+	height: 45px;
+	background-color: #c9c9c9;
+	color: white;
+}
 .navbar-brand {
+	font-size: 45px;
      font-weight: bold;
 }
 
 span.glyphicon-arrow-left{
 	color: black;
 	font-size: 25px
+}
+
+.btn-primary{
+	color: white;
 }

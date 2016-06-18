@@ -6,7 +6,7 @@
       </div>
       <div class="panel-body">
         
-        <p><strong><%= @post.user.username if @post.user %></strong></p>
+        <p><strong><%= link_to(@post.user.username.capitalize, user_path(@post.user.id)) if @post.user %></strong></p>
         <p><%= @post.description %></p>
         <% if @post.user == current_user %>
          <%= link_to 'Edit', edit_post_path(@post) %>
