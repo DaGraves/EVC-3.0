@@ -8,6 +8,18 @@
         
         <p><strong><%= link_to(@post.user.username.capitalize, user_path(@post.user.id)) if @post.user %></strong></p>
         <p><%= @post.description %></p>
+        
+        <div class="votes">
+          <strong>VIEWS</strong>
+        <%= @post.hits %>
+          <div class="votes">
+          <%= link_to like_post_path(@post), method: :put do%>
+            <button type="button" class="btn btn-info" aria-label="Left Align">
+              <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+              <span class="badge"><%= @post.get_upvotes.size %></span>
+              </button>
+              <%end%>
+              </div>
         <% if @post.user == current_user %>
          <%= link_to 'Edit', edit_post_path(@post) %>
         <% end %>
