@@ -12,5 +12,6 @@
  *
  *= require_self
  *= require 'masonry/transitions'
+ #= require lightbox
  *= require_tree .
  */

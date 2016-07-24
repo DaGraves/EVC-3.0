@@ -1,8 +1,7 @@
-<div class="row">
-  <div class="col-md-offset-1 col-md-10">
+  <div class="col-md-offset-2 col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading center">
-        <%= image_tag @post.image.url, height: '300' %>
+        <%= image_tag @post.image.url(:medium) %>
       </div>
       <div class="panel-body">
         
@@ -13,10 +12,17 @@
           <strong>VIEWS</strong>
         <%= @post.hits %>
           <div class="votes">
-          <%= link_to like_post_path(@post), method: :put do%>
+          <%= link_to like_post_path(@post), class: "like", method: :put do%>
             <button type="button" class="btn btn-info" aria-label="Left Align">
               <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
               <span class="badge"><%= @post.get_upvotes.size %></span>
+              </button>
+              <%end%>
+
+              <%= link_to dislike_post_path(@post), class: "like", method: :put do%>
+            <button type="button" class="btn btn-info" aria-label="Left Align">
+              <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
+              <span class="badge"><%= @post.get_downvotes.size %></span>
               </button>
               <%end%>
               </div>

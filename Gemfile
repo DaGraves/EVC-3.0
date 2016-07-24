@@ -37,6 +37,9 @@ gem 'paperclip', '~> 4.2'
 gem 'masonry-rails', '~> 0.2.0'
 gem "punching_bag"
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'lightbox2-rails'
+gem 'ranked-model'
+gem 'paypal-sdk-rest'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

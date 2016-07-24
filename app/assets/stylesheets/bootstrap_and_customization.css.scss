@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400);
 
-$body-bg:                          #e3e3e3;
+$body-bg:                          white;
 $font-family-sans-serif:           'Quicksand', sans-serif;
 $navbar-height:                    70px;
-$navbar-default-bg:                black;      
-$navbar-default-brand-color:       white;
+$navbar-default-bg:               #e3e3e3;      
+$navbar-default-brand-color:       black;
 $brand-primary:                    #c0392b;
 $jumbotron-bg:                     white;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'lightbox';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 .center {
@@ -18,7 +19,7 @@ $jumbotron-bg:                     white;
 }
 
 .navbar-default .navbar-nav > li > a{
-	color: white;
+	color: black;
 	
 }
 
@@ -27,7 +28,7 @@ $jumbotron-bg:                     white;
 	margin-bottom: 0px;
 	height: 45px;
 	background-color: #c9c9c9;
-	color: white;
+	color: black;
 }
 .navbar-brand {
 	font-size: 45px;

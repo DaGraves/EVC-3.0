@@ -4,18 +4,9 @@
 <div id="profuploads">
 <div id="posts" class="transitions-enabled">
   <% @posts.each do |post| %>
-    <div class="box panel panel-default">
+    <div class="box">
       <%= link_to image_tag(post.image.url(:medium)), post %>
-      <div class="panel-body">
-        <strong><%= post.user.username if post.user %></strong><br/>
-        <%= post.description %>
-        <% if post.user == current_user %>
-          <div class="actions">
-            <%= link_to 'Edit', edit_post_path(post) %>
-            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-          </div>
-        <% end %>
-      </div>
+      
     </div>
   <% end %>
 </div>

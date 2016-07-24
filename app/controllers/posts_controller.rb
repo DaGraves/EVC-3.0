@@ -5,7 +5,15 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.order("created_at DESC")
+     if params[:sort_param] == "views"
+      @posts = Post.sort_by_popularity('DESC')
+
+      elsif params[:sort_param] == "likes"
+      @posts = Post.all.order(:cached_votes_up => :desc)
+
+      else
+        @posts = Post.all.order("created_at DESC")
+    end
   end
 
   def show
